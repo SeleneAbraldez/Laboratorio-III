@@ -1,0 +1,2 @@
+ejericio 09 usa otras fucnionas que reconoce como duplicadas, tambien dice de pedir el numero pero no econtre como pedir inpuit
+faltan el 12 y el 13 que me dieron fiaquita
