@@ -6,6 +6,6 @@ class Datos {
         alert("Nombre: " + nombre + " -*- Edad: " + edad);
         console.log("Nombre: " + nombre + " -*- Edad: " + edad);
 
-        (<HTMLDivElement>document.getElementById("div")).innerHTML = "Nombre: " + nombre + " -*- Edad: " + edad;
+        //(<HTMLDivElement>document.getElementById("div")).innerHTML = "Nombre: " + nombre + " -*- Edad: " + edad;
     }
 }
