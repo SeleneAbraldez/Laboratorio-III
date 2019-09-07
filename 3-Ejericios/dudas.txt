@@ -1,7 +1,7 @@
 01
 -ejericio 09 usa otras fucnionas que reconoce como duplicadas
--faltan el 12 y el 13 que me dieron fiaquita
+-12 y 13 que me dieron fiaquita
 02
 -
 03
--
+-eje 01 ????
