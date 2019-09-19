@@ -1,0 +1,15 @@
+1-Agregar visualizacion de la tabla
+    Agregar referencia de el acrchivo ts en index
+    En archivos.ts se crea de recarga, generando un xhttp. Se lo abre con post, se le pasa los headers y 
+    un send con los valores de mostrarGrilla. Cuando el watchador reconoce cambio y esta tdo ok, la grilla se 
+    llena con los datos.
+2-Generar Login previo  
+    creo la pagina del Login, agregho en archivos this.window.location.href = "./login.php";
+    la idea es que se fije si hay una sesion ya seteada, si es correcta que vaya a la pagina, si no, se vaya al login. 
+        para esto, en el onload llamamos al checkstatus, que llama a la verificacion de si esta abierta y correcta la sesion. 
+        -si no la esta, el login con local storage carga los datos de usuarixs y los evalua para saber si estan 
+        correctos, si lo estan entonces recien ahi entra creando una sesion
+        -si la session esta, esta se va a la pagina principal, la cual a su vez llama a la recarga del div hecho en el 1
+
+    
+    
