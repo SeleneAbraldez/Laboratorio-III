@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ej1</title>
+    <script type="text/javascript">
+
+        var obj = { "Codigo_barra": "ABC123", "Precio": 257.53, "Nombre": "Tomate" };
+        //alert(obj.Nombre + " - " + obj.Precio + " - " + obj.codigo_barra);//El alert si le pongo alert(obj) solo me mostrara que es de tipo objeto
+        //console.log(obj); //La consola me muestra el contenido de los objetos
+        //alert(obj);
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", "./json_test.php", true);
+        ajax.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+        ajax.send("producto=" + JSON.stringify(obj));
+        ajax.onreadystatechange = function(){
+            if(ajax.readyState == 4 && ajax.status == 200){
+                console.log(ajax.responseText);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

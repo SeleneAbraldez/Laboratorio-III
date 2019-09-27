@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Autos</title>
+    <script type="text/javascript">
+
+        function MostrarAuto(auto_json){
+            console.log(auto_json)
+        }
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", "./ajax.php", true);
+        ajax.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+        ajax.send("idAuto=mensaje");
+        ajax.onreadystatechange = () => {
+            if (ajax.readyState == 4 && ajax.status == 200) {
+                //console.log(ajax.responseText);
+                var objectAutos = JSON.parse(ajax.responseText);
+                //console.log(objectAutos);
+                var tabla = "<table border = '1'>\
+                    <tr>\
+                    <td>ID</td>\
+                    <td>Marca</td>\
+                    <td>Precio</td>\
+                    <td>Color</td>\
+                    <td>Modelo</td>\
+                    <td>Acciones</td>\
+                    </tr>";
+                for (let i = 0; i < objectAutos.length; i++) {
+                    tabla += "<tr>\
+                        <td>" + objectAutos[i].Id +  "</td>\
+                        <td>" + objectAutos[i].Marca +  "</td>\
+                        <td>" + objectAutos[i].Precio +  "</td>\
+                        <td>" + objectAutos[i].Color +  "</td>\
+                        <td>" + objectAutos[i].Modelo +  "</td>\
+                        <td> <input type='button' value='Mostrar Auto' onclick='MostrarAuto("+JSON.stringify(objectAutos[i])+ ")'> </td>\
+                    </td>";
+                }
+                tabla += "</table>";
+                document.write(tabla);
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
