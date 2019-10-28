@@ -1,0 +1,18 @@
+login con correo y clave con la opcion de redirigirse al resgitro si no se encuentra regustrado.
+si ingresa en el login, llama a la funcion login() en el ajaxs, la cual le manda por post los datos de usuarix 
+para comprobar si existe. 
+yaexisteusu decodea el json con los datos del login, y llama a YAexiste, pasandole los datos.
+yaexiste se fija por medio de sql si la consulta devolvio algo, si devuelve ya existe.
+yaexisteusu devuelve stdclass con el ok y el mensaje
+
+---en esta version solo hay un true o false si se encuentra
+vv
+
+registro con todos los datos, con la opcion de redirigirse al login si ya esta registrado
+si se registra, llama a register(), el cual manda la info de registro al resgitrar usuario
+este se fija si ya esta regustrado el mail, si no esta regustrado entonces se va al agregar usuario de uruario con los datos dadots
+en el regustrar, de ahi la sube con sql y tambien sube la foto
+vv
+
+nexo tiene todas las opciones para hacer por post el agregar mostrar modificar eliminar
+

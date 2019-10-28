@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
 </head>
 
 <body>
     <br><br>
+    <form>
     <table border="0" align="center">
         <tr>
-            <td>Correo: </td>
-            <td><input type="text" id="correo" name="clavetxt" placeholder="Ingrese su correo..."> </td>
+            <td>Mail: <br> <input type="text" id="mail" placeholder="Ingrese su mail..."> </td>
         </tr>
         <tr>
-            <td>Clave: </td>
-            <td><input type="text" id="clave" name="clavetxt" placeholder="Ingrese su clave..."></td>
+            <td>Clave: <br> <input type="text" id="clave" placeholder="Ingrese su clave..."></td>
         </tr>
         <tr>
-            <td colspan="2" align="center">
+            <td>
                 <input type="button" value="Ingresar" onclick="Login()" ; id="btnAceptar">
-                <input type="button" value="Cancelar" id="btnCancelar">
+                <input type="reset" value="Cancelar" id="btnCancelar">
             </td>
         </tr>
-    </table><br>
+        <tr> 
+           <td align="left"> No estas registradx? <a href="registro.php">Registrese aqui</a></td>            
+        </tr>
+    </table>
+    <br>
+    </form>
 </body>
 
 </html>
