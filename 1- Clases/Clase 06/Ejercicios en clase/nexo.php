@@ -4,7 +4,6 @@
     include_once ("clases/usuarix.php");
 
     $op = isset($_POST['op']) ? $_POST['op'] : NULL;
-
     switch ($op) {
         case 'mostrarTodxsUsu':
             $usuarixs = usuarix::TraerTodxsUsu();
@@ -12,7 +11,7 @@
             foreach ($usuarixs as $usuarix) {
                 $exploUsu = $usuarix->MostrarDatosUsu();
                 $fila = explode(" - ", $exploUsu);
-                $tabla .= "<tr><td>" . $fila[0] . "</td><td>" . $fila[1] . "</td><td>" . $fila[2] .  "</td><td>" . $fila[3] . "</td><td>" . $fila[5] ."</td><td>" . $fila[6] ."</td><td><img src='" . $fila[7] . "' width='100px' height='100px'/></td></tr>";
+                $tabla .= "<tr><td>" . $fila[0] . "</td><td>" . $fila[1] . "</td><td>" . $fila[2] .  "</td><td>" . $fila[3] . "</td><td>" . $fila[5] ."</td><td>" . $fila[6] ."</td><td><img src='./fotos/" . $fila[7] . "' width='100px' height='100px'/></td></tr>";
             }
             $tabla .= "</table>";
             echo $tabla;
