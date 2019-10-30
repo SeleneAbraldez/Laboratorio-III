@@ -1,0 +1,16 @@
+2ejericio 
+separar la funcion mostrarmensaje en su porpio ts, necesita instalar e implementamos
+jquery, seguir pasos en txt
+vv
+
+pasar mensaje con la fechea, pegarle a test con el valor del mensaje en dform en mostrarMensjae() 
+y devolver json de objeto con mensaje y fehca
+vv
+
+ahora, tambien hay que subir un archivo por ajaxs jquery
+para esto, creo un php que suba archivos, fijandose por medio de ciertos criterios si la foto se puede subir o no
+en el test creo llamo al php, y le mando que suba, agregandole la data del path a la respuesta
+vv
+
+creo un div para la imagen, que este invisible, y luego con jquery cambio los atributos src y la visibilidad
+vv

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase07</title>
+    <!-- agregar https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="mostrarMensaje.js">
+    // muevo el scrpt a su propio archivo asi todo es mas comodo
+    </script>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <table border="0" align="center">
+        <tr>
+            <td><input type="text" id="mensaje"></td>
+        </tr>
+        <tr>
+            <td><input type="file" id="archivo" name="archivo" /></td>
+        </tr>
+        <tr>
+            <td><img id="fotoTmp" style="float:left" class="fotoform" /></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="MostrarMensaje()" value="Mostrar Mensaje"></td>
+        </tr>
+        <tr>
+            <td><div id="div_mensaje"></div></td>
+            <td style="text-align:center">
+                <img id="imgFoto" style= "visibility: hidden" src="" width="250px" height="250px" />
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

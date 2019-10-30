@@ -1,0 +1,5 @@
+npm init apra crear un package.json, te pide datos y  apsas todo de lartgo, 
+
+npm install --save @types/jquery instalo el jquery
+
+/// <reference path="./node_modules/@types/jquery/index.d.ts"/> agrego al .ts que vaya a usar la referencia
