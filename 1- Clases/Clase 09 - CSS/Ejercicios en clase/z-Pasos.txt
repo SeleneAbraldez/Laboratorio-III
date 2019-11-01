@@ -1,0 +1,75 @@
+clase06-viernes
+login con correo y clave con la opcion de redirigirse al resgitro si no se encuentra regustrado.
+si ingresa en el login, llama a la funcion login() en el ajaxs, la cual le manda por post los datos de usuarix 
+para comprobar si existe. 
+yaexisteusu decodea el json con los datos del login, y llama a YAexiste, pasandole los datos.
+yaexiste se fija por medio de sql si la consulta devolvio algo, si devuelve ya existe.
+yaexisteusu devuelve stdclass con el ok y el mensaje
+
+---en esta version solo hay un true o false si se encuentra
+vv
+
+registro con todos los datos, con la opcion de redirigirse al login si ya esta registrado
+si se registra, llama a register(), el cual manda la info de registro al resgitrar usuarix
+este se fija si ya esta regustrado el mail, si no esta regustrado entonces se va al agregar usuarix de uruario con los datos dadots
+en el regustrar, de ahi la sube con sql y tambien sube la foto
+vv
+
+nexo tiene todas las opciones para hacer por post el agregar mostrar modificar eliminar
+
+***
+agrego clase producto y cambio el accseso para que sea a mercado y no solo usuarixs
+***
+
+clase06 - lunes
+pruebas con composer de generar pdfs
+/*
+composer.json
+{
+    "name" : "utn_fra/prog_3",
+    "description": "generador de documentos .pdf",
+	"require":{
+		"mpdf/mpdf": "8.*"
+	}
+}
+*/
+composer install
+
+generamos un idex, automaticamente este nos va a llevar a login si no tenemos ningunx usuarix cargadx
+al entrar existosamente al login, tiene que ir a el index, ofreciendo las listas. para esto modifique el loginusuarix
+para que si encuentra algunx usuarix me lx traiga en stdclass, pudiendo usar la data mas adelante.
+teniendo que tipo de perfil es, creo una sesion con ese perfil.
+vv
+
+el index, reconociendo el tipo de perfil, muetsra distintas cosas.
+un cerrar sesion, por si lx usuarix quiere cerrar, el cual destrute la sesion y debe redireccional al login
+vv
+
+genero dentro de abm phps para mostrar las listas de usuarixs y productos, los cuales usaremos para mostrar
+un pdf con el listado de usuarixs y productos si si la sesion es de tipo 1, listado solo deproductos si es tipo 0 en index
+
+para comprobar que no se entre de dorma "ilegal" en la lista de usuarixs, se fija el tipo de sesion antes de entrar
+
+le agregue al agregar usuarix que redireccione alk login si fue todo exitoso
+
+clase07 - lunes
+¿¿¿????
+
+
+
+clase09 - viernes
+hay que pasar todo a css xddd
+empiezo isntalando el jquery
+npm init apra crear un package.json, te pide datos y  apsas todo de lartgo, 
+npm install --save @types/jquery instalo el jquery
+/// <reference path="./node_modules/@types/jquery/index.d.ts"/> agrego al ajaxs
+
+creo los estilos de error y de exito, que cambien dependiendo de que salga bien algo o no
+
+OK aca viene una fruta terrible porque nadie me explica bien que corno hay que hacer
+cambie el index, ahora es un post etc. 
+teniendo esto agarras y le amdnas cumbia, depende el metodo realiza distintas acciones
+entre a usuarix y optimice toooodas las consultas para que vayan primero a la api, y despues llamen a la 
+consulta de sql
+en el index deberia hacer una validacion de si usuarix existe, si es asi recien ahi ir al resto de cosas
+NO ESTA TERMINADO PERO NO SE QUE HACERRRRRRRRRRRRRR
