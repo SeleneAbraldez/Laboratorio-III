@@ -1,0 +1,9 @@
+
+/* se pueden agregar estos estilos a cualquiera, no son particulares */
+.error{
+    background-color: rgb(240, 180, 180);
+}
+
+.exito{
+    background-color:rgb(207, 238, 189);
+}
