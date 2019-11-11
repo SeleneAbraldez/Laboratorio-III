@@ -1,0 +1,21 @@
+{
+  "name": "Login5css",
+  "description": "",
+  "main": "ajax.js",
+  "authors": [
+    "Selene <seleabraldez@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

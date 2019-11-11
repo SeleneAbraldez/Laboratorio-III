@@ -1,0 +1,47 @@
+body{
+    background-color: #441146;
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    background-color: #eeedee;
+    border-radius: 36px 36px 36px 36px;
+    -moz-border-radius: 36px 36px 36px 36px;
+    -webkit-border-radius: 36px 36px 36px 36px;
+}
+
+.form-control:focus{
+    border-color: rgba(213, 194, 236, 0.808);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(220, 190, 240, 0.411);
+}
+
+.btn-primary {
+    background-color: rgb(148, 123, 179) !important;
+    border-color: rgb(152, 123, 187);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #8064A2 !important;
+    border-color: #8064A2;
+}
+
+
+
+
+
+
+
+/* se pueden agregar estos estilos a cualquiera, no son particulares */
+.error{
+    background-color: rgb(240, 180, 180);
+}
+
+.exito{
+    background-color:rgb(207, 238, 189);
+}
+
+
