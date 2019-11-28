@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- titulo -->
+    <title>Principal</title>
+    <!-- bootstrap, validator y jquery -->
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrapvalidator/dist/css/bootstrapValidator.css" />
+    <script type="text/javascript" src="./libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./libs/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <!-- estilos -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <!-- refs JS -->
+    <script type="text/javascript" src="./FRONTEND/registroValidator.js"></script>
+    <script type="text/javascript" src="./FRONTEND/principal.js"></script>
+</head>
+
+<body class="principal">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <!-- Titulo -->
+        <span class="tituloPrincipal">PRINCIPAL</span><br>
+        <div class="col-md-2"></div>
+        <div class="container" style="background-color: rgb(255, 255, 255);">
+            <br>
+            <div id="listadoDiv"></div>
+
+            <!-- modal confirmacion de eliminar usu -->
+            <div id="confirmarEliminar" class="modal fade" role="dialog" hidden>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Confirme eliminar</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="confirmarTexto"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" id="modal-btn-si"
+                                data-dismiss="modal">Eliminar</button>
+                            <button type="button" class="btn btn-dark" id="modal-btn-no"
+                                data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Si el perfil del usuario logueado es ‘invitado’, se visualizarán controles
+        de tipo combobox, que permitirán elegir: color de fondo, color de fuente
+        y forma de las fotos (con vértices redondeados, redonda o estilo diapositiva). -->
+        <br>
+        <div class="row" id="controles" style="visibility:hidden;">
+            <div class="container" style="background-color: rgb(255, 255, 255);">
+                <br>
+                <div class="col-md-3"></div>
+                <!-- titulos comboboxs -->
+                <label class="col-md-2">Color de Fondo <br> <br> Color de Fuente <br> <br> Estilo de imagen </label>
+                <!-- comboboxs -->
+                <!-- fondo -->
+                <select class="col-md-4" id="colorFondo">
+                    <option value="white">Blanco</option>
+                    <option value="purple">Violeta</option>
+                    <option value="teal">Aguamarina</option>
+                    <option value="silver">Gris</option>
+                </select>
+                <br> <br>
+                <!-- fuente -->
+                <select class="col-md-4" id="colorFuente">
+                    <option value="black">Negro</option>
+                    <option value="white">Blanco</option>
+                    <option value="lime">Lima</option>
+                    <option value="navy">Azul Marino</option>
+                </select>
+                <br> <br>
+                <!-- estilo imagen -->
+                <select class="col-md-4" id="estiloImagen">
+                    <option value="">Normal</option>
+                    <option value="rounded">Redondeado</option>
+                    <option value="circle">Redonda</option>
+                    <option value="thumbnail">Estilo Diapositiva</option>
+                </select>
+                <br><br>
+                <div class="col-md-5"></div>
+                <button type="button" class="btn btn-info" id="btnGuardarCambios">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

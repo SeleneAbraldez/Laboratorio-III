@@ -1,0 +1,21 @@
+body.login{
+    background-color: #fff1ff;
+}
+
+body.registro{
+    background-color: #dce9f0;
+}
+
+.principal{
+    background-color: #b7ecf0;
+}
+
+.titulo {
+    font-size: 400%;
+}
+
+.tituloPrincipal {
+    font-size: 400%;
+    color:#6785d8;
+    font-weight: lighter;
+}
