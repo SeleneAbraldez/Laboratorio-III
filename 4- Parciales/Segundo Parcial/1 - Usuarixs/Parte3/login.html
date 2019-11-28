@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- titulo -->
+    <title>Login</title>
+    <!-- bootstrap, validator y jquery -->
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./libs/bootstrapvalidator/dist/css/bootstrapValidator.css" />
+    <script type="text/javascript" src="./libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./libs/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <!-- estilos -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <!-- refs JS -->
+    <script type="text/javascript" src="./FRONTEND/loginValidator.js"></script>
+    <script type="text/javascript" src="./FRONTEND/login.js"></script>
+</head>
+
+<body class="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <span class="titulo">LOGIN</span><br>
+            <form class="well form-horizontal" id="loginForm" method="POST" enctype="multipart/form-data">
+                <!-- mail -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">E-mail</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                            </span>
+                            <input name="mail" class="form-control" type="text" id="mailText" placeholder="Correo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- clave -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Clave</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                            <input name="clave" class="form-control" type="password" id="claveText"
+                                placeholder="Contraseña">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" align="center">
+                    <label class="control-label col-md-1"></label>
+                    <button class="btn btn-primary col-md-4" type="submit" id="btnEnviar">Enviar
+                        <!-- <span class="glyphicon glyphicon-send"></span> --></button>
+                    <label class="control-label col-md-2"></label>
+                    <button class="btn btn-warning col-md-4" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Quiero registrarme -->
+        <div class="row">
+            <label class="col-md-1"></label>
+            <button class="btn btn-success col-md-12" type="button" id="btnRegistrar">Quiero Registrarme!</button>
+        </div>
+
+        <!-- Mensaje de error -->
+        <br>
+        <div class="alert alert-warning" style='display:none;'>
+            <button type="button" class="close" id="toggleAlert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div id="alertText"></div>
+        </div>
+    </div>
+</body>
+
+</html>
