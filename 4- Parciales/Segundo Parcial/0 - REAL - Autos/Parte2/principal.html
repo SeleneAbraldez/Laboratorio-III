@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- titulo -->
+    <title>Principal</title>
+    <!-- bootstrap, validator y jquery -->
+    <link rel="stylesheet" href="./FRONTEND/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./FRONTEND/libs/bootstrapvalidator/dist/css/bootstrapValidator.css" />
+    <script type="text/javascript" src="./FRONTEND/libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./FRONTEND/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./FRONTEND/libs/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <!-- estilos -->
+    <link rel="stylesheet" href="FRONTEND/css/estilos.css" />
+    <!-- refs JS -->
+    <script src="FRONTEND/principal.js"></script>
+</head>
+
+<body class="principal">
+   <div class="container">
+        <span>
+        <div class="row">
+            <span class="tituloPrincipal">PRINCIPAL</span><br>
+            <br>
+            <div class="container col-md-6" style="background: teal;">
+            <div id="tablaUsuarios"></div>
+            </div>
+            <!-- modal confirmacion de eliminar autos -->
+            <div id="confirmarEliminar" class="modal fade" role="dialog" hidden>
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Confirme eliminar</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p id="confirmarTexto"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" id="modal-btn-si"
+                                    data-dismiss="modal">Eliminar</button>
+                                <button type="button" class="btn btn-dark" id="modal-btn-no"
+                                    data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="container col-md-6" style="background: orange;">
+            <div id="tablaAutos"></div>
+            </div>
+            <div id="alertAuto" class="alert alert-danger" role="alert" hidden></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

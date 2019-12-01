@@ -1,0 +1,31 @@
+body.login{
+    background-color: lightpink;
+}
+.titulo{
+    font-size: 400%;
+}
+
+.principal{
+    background-color: #b7ecf0;
+}
+
+.tituloPrincipal {
+    font-size: 400%;
+    color:#6785d8;
+    font-weight: lighter;
+}
+
+.modal-content h4{
+    font-size:35px;
+    color: rgb(4, 91, 190)
+}
+
+#myModal .modal-content{
+    background-color:beige;
+}
+
+#formRegistro{
+    padding: 30px;
+    background-color:lightgrey
+}
+

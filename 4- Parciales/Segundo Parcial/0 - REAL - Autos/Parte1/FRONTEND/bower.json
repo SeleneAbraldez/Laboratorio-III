@@ -1,0 +1,22 @@
+{
+  "name": "SegundoParcial",
+  "authors": [
+    "SeleneAbraldez"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "libs"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrapvalidator": "~0.5.3"
+  }
+}
